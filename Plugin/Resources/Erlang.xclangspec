@@ -1,0 +1,407 @@
+(
+	{
+		Identifier = "xcode.lang.erlang.identifier";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyz'";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'_-@";
+			Words = (
+				true,
+				false,
+				after,
+				and,
+				andalso,
+				band,
+				begin,
+				bnot,
+				bor,
+				bsl,
+				bsr,
+				bxor,
+				case,
+				catch,
+				cond,
+				div,
+				end,
+				fun,
+				if,
+				let,
+				not,
+				of,
+				or,
+				orelse,
+				query,
+				receive,
+				rem,
+				try,
+				when,
+				xor,
+				",",
+				".",
+				";",
+				":",
+				//"->",    
+				"!",
+			);
+			Type = "xcode.syntax.keyword";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.variables";
+		Syntax = {
+			StartChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-";
+			Type = "xcode.syntax.attribute";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.standardmodules";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyz'";
+			Chars = "abcdefghijklmnopqrstuvwxyz_";
+			Words = (
+				app,
+				application,
+				array,
+				base64,
+				calendar,
+				code,
+				compile,
+				config,
+				cover,
+				cprof,
+				crypto,
+				"crypto_app",
+				debugger,
+				dets,
+				dialyzer,
+				dict,
+				"disk_log",
+				edoc,
+				erlang,
+				erlc,
+				"error_handler",
+				"error_logger",
+				ets,
+				file,
+				"gen_event",
+				"gen_fsm",
+				"gen_server",
+				"gen_tcp",
+				"gen_udp",
+				global,
+				inet,
+				inets,
+				io,
+				lists,
+				make,
+				math,
+				mnesia,
+				"net_adm",
+				odbc,
+				os,
+				proplists,
+				qlc,
+				regexp,
+				sets,
+				snmp,
+				string,
+				supervisor,
+				sys,
+				xmerl,
+			);
+			Type = "xcode.syntax.identifier.class.system";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.bif";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyz";
+			Chars = "abcdefghijklmnopqrstuvwxyz";
+			Words = (
+				"atom_to_list",
+				"binary_to_list",
+				"bitstring_to_list",
+				"binary_to_term",
+				"bit_size",
+				date,
+				"delete_module",
+				"disconnect_node",
+				element,
+				erase,
+				exit,
+				float,
+				"float_to_list",
+				get,
+				"get_keys",
+				"integer_to_list",
+				"iolist_to_binary",
+				"iolist_size",
+				"is_alive",
+				"is_atom",
+				"is_binary",
+				"is_bitstring",
+				"is_boolean",
+				"is_float",
+				"is_function",
+				"is_integer",
+				"is_list",
+				"is_number",
+				"is_pid",
+				"is_port",
+				"is_process_alive",
+				"is_record",
+				"is_reference",
+				"is_tuple",
+				length,
+				link,
+				"list_to_atom",
+				"list_to_binary",
+				"list_to_bitstring",
+				"list_to_existing_atom",
+				"list_to_float",
+				"list_to_integer",
+				"list_to_tuple",
+				"load_module",
+				"make_ref",
+				node,
+				nodes,
+				now,
+				"open_port",
+				"pid_to_list",
+				"port_close",
+				"port_command",
+				"port_connect",
+				"port_control",
+				"pre_loaded",
+				"process_flag",
+				"process_info",
+				register,
+				registered,
+				round,
+				self,
+				setelement,
+				size,
+				spawn,
+				"spawn_link",
+				"spawn_monitor",
+				"spawn_opt",
+				"split_binary",
+				statistics,
+				"term_to_binary",
+				throw,
+				time,
+				tl,
+				trunc,
+				"tuple_size",
+				"tuple_to_list",
+				unlink,
+				unregister,
+				whereis,
+			);
+			Type = "xcode.syntax.identifier.function.system";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.macro";
+		Syntax = {
+			StartChars = "?";
+			Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?_-";
+			Words = (
+				"?MODULE",
+				"?MODULE_STRING",
+				"?FILE",
+				"?LINE",
+				"?MACHINE",
+			);
+			Type = "xcode.syntax.identifier.constant";
+			AltType = "xcode.syntax.identifier.constant";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang";
+		Description = "Erlang Coloring";
+		BasedOn = "xcode.lang.simpleColoring";
+		IncludeInMenu = YES;
+		Name = Erlang;
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer.toplevel";
+			IncludeRules = (
+				"xcode.lang.erlang.function",
+				"xcode.lang.erlang.bracketexpr",
+				"xcode.lang.erlang.parenexpr",
+				"xcode.lang.erlang.tupleexpr",
+				"xcode.lang.erlang.binaryexpr",
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.lexer";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.erlang.comment.singleline",
+				"xcode.lang.erlang.bif",
+				"xcode.lang.erlang.standardmodules",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.number",
+				"xcode.lang.erlang.identifier",
+				"xcode.lang.erlang.variables",
+				"xcode.lang.erlang.macro",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.lexer.toplevel";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.erlang.comment.singleline",
+				"xcode.lang.erlang.bif",
+				"xcode.lang.erlang.standardmodules",
+				"xcode.lang.erlang.preprocessor",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.erlang.function.declarator",
+				"xcode.lang.erlang.identifier",
+				"xcode.lang.erlang.variables",
+				"xcode.lang.erlang.macro",
+				"xcode.lang.number",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.lexer.included";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.erlang.parenexpr",
+				"xcode.lang.erlang.bracketexpr",
+				"xcode.lang.erlang.bif",
+				"xcode.lang.erlang.standardmodules",
+				"xcode.lang.string",
+				"xcode.lang.character",
+				"xcode.lang.erlang.variables",
+				"xcode.lang.erlang.macro",
+				"xcode.lang.number",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.preprocessor";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer.included";
+			Start = "-";
+			EscapeChar = "\\";
+			End = ".";
+			StartAtBOL = YES;
+			Type = "xcode.syntax.preprocessor";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.function";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer.toplevel";
+			Start = "xcode.lang.erlang.function.declarator";
+			End = ".";
+			AltEnd = ";";
+			Foldable = YES;
+			Recursive = YES;
+			StartAtBOL = YES;
+			IncludeRules = (
+				"xcode.lang.erlang.bracketexpr",
+				"xcode.lang.erlang.parenexpr",
+			);
+			Type = "xcode.syntax.definition.function";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.function.declarator";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Rules = (
+				"xcode.lang.erlang.function.name",
+				"xcode.lang.erlang.operator.start",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.function.name";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Rules = (
+				"xcode.lang.erlang.identifier",
+				"xcode.lang.erlang.parenexpr?",
+			);
+			Type = "xcode.syntax.name.partial";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.operator.start";
+		Syntax = {
+			Words = (
+				"->",
+			);
+			Type = "xcode.syntax.keyword";
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.parenexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Start = "(";
+			End = ")";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.erlang.bracketexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.bracketexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Start = "[";
+			End = "]";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.erlang.parenexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.tupleexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Start = "{";
+			End = "}";
+			Recursive = YES;
+			IncludeRules = (
+				"xcode.lang.erlang.bracketexpr",
+				"xcode.lang.erlang.parenexpr",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.binaryexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.erlang.lexer";
+			Start = "<<";
+			End = ">>";
+			Recursive = YES;
+		};
+	},
+	{
+		Identifier = "xcode.lang.erlang.comment.singleline";
+		Syntax = {
+			Start = "%";
+			EscapeChar = "\\";
+			End = "\n";
+			IncludeRules = (
+				"xcode.lang.url",
+				"xcode.lang.url.mail",
+				"xcode.lang.comment.mark",
+			);
+			Type = "xcode.syntax.comment";
+		};
+	},
+)

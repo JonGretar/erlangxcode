@@ -1,0 +1,153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXGroup section */
+		332D7C2A0E8C227300EE233C = {
+			isa = PBXGroup;
+			children = (
+				332D7C3D0E8C22DF00EE233C /* ebin */,
+				332D7C3F0E8C22F000EE233C /* priv */,
+				332D7C3E0E8C22E700EE233C /* include */,
+				332D7C3C0E8C229800EE233C /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		332D7C3C0E8C229800EE233C /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		332D7C3D0E8C22DF00EE233C /* ebin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ebin;
+			sourceTree = "<group>";
+		};
+		332D7C3E0E8C22E700EE233C /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		332D7C3F0E8C22F000EE233C /* priv */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = priv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33EAE01D0E8E5B6E00156441 /* «PROJECTNAME» */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33EAE0210E8E5B7900156441 /* Build configuration list for PBXNativeTarget "«PROJECTNAME»" */;
+			buildPhases = (
+				33EAE01C0E8E5B6E00156441 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = «PROJECTNAME»;
+			productName = ErlangTarget;
+			productType = "org.erlang.product-type.beam";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		332D7C2C0E8C227300EE233C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 332D7C2F0E8C227300EE233C /* Build configuration list for PBXProject "EmptyErlangApp" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 332D7C2A0E8C227300EE233C /* «PROJECTNAMEASXML» */;
+			productRefGroup = 332D7C2A0E8C227300EE233C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33EAE01D0E8E5B6E00156441 /* «PROJECTNAME2» */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33EAE01C0E8E5B6E00156441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		332D7C2D0E8C227300EE233C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		332D7C2E0E8C227300EE233C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		33EAE01E0E8E5B6F00156441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = ErlangTarget;
+			};
+			name = Debug;
+		};
+		33EAE01F0E8E5B6F00156441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = ErlangTarget;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332D7C2F0E8C227300EE233C /* Build configuration list for PBXProject "EmptyErlangApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332D7C2D0E8C227300EE233C /* Debug */,
+				332D7C2E0E8C227300EE233C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33EAE0210E8E5B7900156441 /* Build configuration list for PBXNativeTarget "«PROJECTNAME»" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33EAE01E0E8E5B6F00156441 /* Debug */,
+				33EAE01F0E8E5B6F00156441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 332D7C2C0E8C227300EE233C /* Project object */;
+}

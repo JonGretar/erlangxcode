@@ -1,0 +1,13 @@
+{
+	Identifier = "org.erlang.product-type.beam";
+	Name = "Erlang Beam File";
+	Description = "Erlang Compiled Code";
+	IconNamePrefix = TargetPlugin;
+	DefaultTargetName = ErlangTool;
+	"AllowedBuildPhaseTypes" = (
+		Sources,
+	);
+	PackageTypes = (
+		"org.erlang.package-type.executable",
+	);
+}

@@ -1,0 +1,93 @@
+(
+	{
+		Identifier = erlang;
+		Name = Erlang;
+		IsMenu = YES;
+		IncludeContexts = (
+			"xcode.lang.erlang",
+		);
+	},
+	{
+		Identifier = "erlang.preprocessor";
+		BasedOn = erlang;
+		TextString = "-$(Tag)($(Contents)).";
+	},
+	{
+		Identifier = "erlang.preprocessor.module";
+		BasedOn = "erlang.preprocessor";
+		Name = Module;
+		IsMenuItem = YES;
+		Tag = module;
+		Contents = "<#!modulename!#>";
+		CompletionPrefix = module;
+	},
+	{
+		Identifier = "erlang.preprocessor.author";
+		BasedOn = "erlang.preprocessor";
+		Name = Author;
+		IsMenuItem = NO;
+		Tag = author;
+		Contents = "<#!author!#>";
+		CompletionPrefix = author;
+	},
+	{
+		Identifier = "erlang.preprocessor.compile";
+		BasedOn = "erlang.preprocessor";
+		Name = Compile;
+		IsMenuItem = NO;
+		Tag = compile;
+		Contents = "<#!statements!#>";
+		CompletionPrefix = compile;
+	},
+	{
+		Identifier = "erlang.preprocessor.export";
+		BasedOn = "erlang.preprocessor";
+		Name = Export;
+		IsMenuItem = YES;
+		Tag = export;
+		Contents = "[<#!function/0!#>]";
+		CompletionPrefix = export;
+	},
+	{
+		Identifier = "erlang.preprocessor.include";
+		BasedOn = "erlang.preprocessor";
+		Name = "Include File";
+		IsMenuItem = YES;
+		Tag = include;
+		Contents = "\"<#!filename!#>\"";
+		CompletionPrefix = include;
+	},
+	{
+		Identifier = "erlang.preprocessor.includelibs";
+		BasedOn = "erlang.preprocessor";
+		Name = "Include File (non absolute)";
+		IsMenuItem = NO;
+		Tag = "include_lib";
+		Contents = "\"<#!filename!#>\"";
+		CompletionPrefix = "include_lib";
+	},
+	{
+		Identifier = "erlang.caseblock";
+		BasedOn = erlang;
+		IsMenuItem = YES;
+		Name = "Case Block";
+		TextString = "case <#expr#> of\n\t<#!pattern!#> ->\n\t\t <#!actions!#>; \n\t _Otherwise -> \n\t\t true \nend\n";
+		CompletionPrefix = case;
+	},
+	{
+		Identifier = "erlang.ifblock";
+		BasedOn = erlang;
+		IsMenuItem = YES;
+		Name = "If Block";
+		TextString = "if \n\t<#!statements!#> ->\n\t\t <#!actions!#>; \n\t true -> \n\t\t <#!actions!#> \nend\n";
+		CompletionPrefix = if;
+	},
+	{
+		Identifier = "erlang.receiveblock";
+		BasedOn = erlang;
+		IsMenuItem = YES;
+		Name = "Case Block";
+		TextString = "receive\n\t<#!pattern!#> ->\n\t\t <#!actions!#>; \n\t _Otherwise -> \n\t\t true \nend\n";
+		CompletionPrefix = receive;
+	},
+)

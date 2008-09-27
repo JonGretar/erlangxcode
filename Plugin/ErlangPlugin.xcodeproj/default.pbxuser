@@ -1,0 +1,41 @@
+// !$*UTF8*$!
+{
+	01BFAB99FFEAD4F711CA2A57 = {
+		activeArgIndex = 2147483647;
+		argumentStrings = (
+		);
+		debuggerPlugin = ASKDebugger;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+			{
+				active = NO;
+				name = AEDebug;
+				value = 1;
+			},
+			{
+				active = NO;
+				name = AEDebugSends;
+				value = 1;
+			},
+			{
+				active = NO;
+				name = AEDebugReceives;
+				value = 1;
+			},
+		);
+		isa = PBXExecutable;
+		shlibInfoDictList = (
+		);
+		sourceDirectories = (
+		);
+	};
+	2A37F4C6FDCFA73011CA2CEA = {
+		activeExec = 0;
+		targetExecs = {
+			macosx = (
+				01BFAB99FFEAD4F711CA2A57,
+			);
+		};
+	};
+}

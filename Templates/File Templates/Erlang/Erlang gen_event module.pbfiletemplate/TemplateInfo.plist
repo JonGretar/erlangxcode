@@ -1,0 +1,4 @@
+{
+    MainTemplateFile = "file.erl";
+    Description = "A gen_event module.";
+}

@@ -1,0 +1,7 @@
+(
+	{
+		Name = "Erlang source rule";
+		FileType = "sourcecode.erlang.erl";
+		CompilerSpec = "org.erlang.compiler.erlc";
+	},
+)

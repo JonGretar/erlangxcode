@@ -1,0 +1,9 @@
+{
+	Class = Native;
+	ProductType = "org.erlang.product-type.beam";
+	Description = "Target for building with Erlang.";
+	BuildPhases = (
+		{	Class = Sources;
+		},
+	);
+}

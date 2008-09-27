@@ -1,0 +1,12 @@
+(
+    // Erlang - architecture independent
+    {
+        Type = Architecture;
+        Identifier = erlang;
+        Name = "Erlang BEAM";
+        Description = "Erlang architecture - independent of any hardware";
+        ByteOrder = little;
+        ShowInUI = YES;
+//        SortNumber = 53;
+    },
+)

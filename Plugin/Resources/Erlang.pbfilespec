@@ -23,11 +23,12 @@
 			"#! /usr/local/bin/escript",
 		);
 		AppliesToBuildRules = YES;
+		CanSetIncludeInIndex = YES;
 	},
 	{
 		Identifier = "sourcecode.erlang.hrl";
 		BasedOn = "sourcecode.erlang";
-		Name = "Erlang header file";
+		Name = "Erlang Interface File";
 		Extensions = (
 			hrl,
 		);

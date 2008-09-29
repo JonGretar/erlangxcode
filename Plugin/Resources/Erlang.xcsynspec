@@ -1,0 +1,7 @@
+(
+    {
+		Identifier = "xcode.syntax.erlang.module";
+        IncludeInPrefs = NO;
+		NameFormat = "-module(%@)";
+	},
+)

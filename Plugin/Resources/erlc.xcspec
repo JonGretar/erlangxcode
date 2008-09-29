@@ -1,10 +1,13 @@
 {
+	Type = Compiler;
 	Identifier = "org.erlang.compiler.erlc";
 	Class = "EXCompilerSpecificationErlc";
 	Name = "Erlang Compiler";
 	Description = "Erlang Compiler";
-	Version = R12B4;
-	Vendor = Erlang;
+	Version = "R12B4";
+	Vendor = "Erlang";
+	ExecPath = "/usr/local/bin/erlc";
+	OptionsForCommandLinePrefix = "ERLC_";
 	Architectures = (
 		beam,
 		i386,
@@ -16,8 +19,15 @@
 	FileTypes = (
 		"sourcecode.erlang.erl",
 	);
-	ExecPath = "/usr/local/bin/erlc";
-	CommandOutputParser = "EXCommandOutputParserErlc";
+	SupportsZeroLink = NO;
+	SupportsPredictiveCompilation = NO;
+	SupportsHeadermaps = NO;
+	//CommandOutputParser = "EXCommandOutputParserErlc";
+	CommandOutputParser = (
+		("(.*?):([0-9]+): Warning:(.*)", emit-warning),
+		("(.*?):([0-9]+): Error:(.*)", emit-error),
+		("(.*?):([0-9]+): (.*)", emit-error)
+	);
 	Options = (
 		{
 			Name = "ERLC_OTHERFLAGS";
@@ -25,11 +35,9 @@
 			DefaultValue = "";
 			CommandLineArgs = {
 				"" = ();
-				"<<otherwise>>" = (
-					"${0}",
-				);
+				"<<otherwise>>" = ("${0}");
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
 		},
 		{
@@ -38,11 +46,9 @@
 			DefaultValue = ebin;
 			CommandLineArgs = {
 				"" = ();
-				"<<otherwise>>" = (
-					"-o${0}",
-				);
+				"<<otherwise>>" = ("-o${0}");
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
 		},
 		{
@@ -51,11 +57,9 @@
 			DefaultValue = "";
 			CommandLineArgs = {
 				"" = ();
-				"<<otherwise>>" = (
-					"-I${0}",
-				);
+				"<<otherwise>>" = ("-I${0}");
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
 		},
 		{
@@ -64,31 +68,21 @@
 			DefaultValue = NO;
 			CommandLineArgs = {
 				NO = ();
-				YES = (
-					"-smp",
-				);
+				YES = ( "-smp" );
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
 		},
 		{
 			Name = "ERLC_WARNINGLEVEL";
 			Type = enum;
-			AllowedValues = (
-				0,
-				1,
-				2,
-				3,
-				4,
-			);
+			AllowedValues = ( 0, 1, 2, 3, 4, );
 			DefaultValue = 1;
 			CommandLineArgs = {
 				1 = ();
-				"<<otherwise>>" = (
-					"-W${0}",
-				);
+				"<<otherwise>>" = ( "-W${0}" );
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
 		},
 		{
@@ -97,12 +91,16 @@
 			DefaultValue = NO;
 			CommandLineArgs = {
 				NO = ();
-				YES = (
-					"-v",
-				);
+				YES = (	"-v" );
 			};
-			Category = Building;
+			Category = Language;
 			CommonOption = NO;
+		},
+	);
+	OptionCategories = (
+		{
+			Name = Language;
+			//IconName = "DX-option-language-d";
 		},
 	);
 }

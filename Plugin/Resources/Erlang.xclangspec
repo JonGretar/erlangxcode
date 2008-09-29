@@ -43,7 +43,7 @@
 				"!",
 			);
 			Type = "xcode.syntax.keyword";
-			AltType = "xcode.syntax.identifier";
+			AltType = "xcode.syntax.identifier"; // non-keywords are identifiers
 		};
 	},
 	{
@@ -344,6 +344,8 @@
 			Type = "xcode.syntax.keyword";
 		};
 	},
+	
+	
 	{
 		Identifier = "xcode.lang.erlang.parenexpr";
 		Syntax = {
@@ -390,6 +392,9 @@
 			Recursive = YES;
 		};
 	},
+	
+	
+	
 	{
 		Identifier = "xcode.lang.erlang.comment.singleline";
 		Syntax = {

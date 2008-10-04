@@ -54,7 +54,7 @@
 		{
 			Name = "ERLC_INCLUDEDIR";
 			Type = stringlist;
-			DefaultValue = "";
+			DefaultValue = "include";
 			CommandLineArgs = {
 				"" = ();
 				"<<otherwise>>" = ("-I${0}");

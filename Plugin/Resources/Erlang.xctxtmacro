@@ -19,7 +19,7 @@
 		IsMenuItem = YES;
 		Tag = module;
 		Contents = "<#!modulename!#>";
-		CompletionPrefix = module;
+		CompletionPrefix = "module";
 	},
 	{
 		Identifier = "erlang.preprocessor.author";
@@ -28,7 +28,7 @@
 		IsMenuItem = NO;
 		Tag = author;
 		Contents = "<#!author!#>";
-		CompletionPrefix = author;
+		CompletionPrefix = "author";
 	},
 	{
 		Identifier = "erlang.preprocessor.compile";
@@ -37,7 +37,16 @@
 		IsMenuItem = NO;
 		Tag = compile;
 		Contents = "<#!statements!#>";
-		CompletionPrefix = compile;
+		CompletionPrefix = "compile";
+	},
+	{
+		Identifier = "erlang.preprocessor.define";
+		BasedOn = "erlang.preprocessor";
+		Name = Define;
+		IsMenuItem = NO;
+		Tag = define;
+		Contents = "<#!statements!#>";
+		CompletionPrefix = "define";
 	},
 	{
 		Identifier = "erlang.preprocessor.export";
@@ -46,7 +55,7 @@
 		IsMenuItem = YES;
 		Tag = export;
 		Contents = "[<#!function/0!#>]";
-		CompletionPrefix = export;
+		CompletionPrefix = "export";
 	},
 	{
 		Identifier = "erlang.preprocessor.include";

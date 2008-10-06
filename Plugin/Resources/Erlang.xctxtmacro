@@ -49,6 +49,15 @@
 		CompletionPrefix = "define";
 	},
 	{
+		Identifier = "erlang.preprocessor.record";
+		BasedOn = "erlang.preprocessor";
+		Name = Record;
+		IsMenuItem = NO;
+		Tag = record;
+		Contents = "<#!record!#>";
+		CompletionPrefix = "record";
+	},
+	{
 		Identifier = "erlang.preprocessor.export";
 		BasedOn = "erlang.preprocessor";
 		Name = Export;

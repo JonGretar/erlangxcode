@@ -1,0 +1,23 @@
+{
+    Identifier = org.erlang.build-tasks.copy-resources
+    Type = Compiler;
+    Name = "ErlangCopyResources";
+    Description = "Copies a term file  to the product";
+    CommandLine = "cp $(InputFileRelativePath) ebin";
+    RuleName = "Copying Resources: $(InputFileName) $(InputFileRelativePath)";
+    ExecDescription = "Copying $(InputFileRelativePath)";
+    SynthesizeBuildRule = Yes;
+    InputFileTypes = (
+        text.erlang.terms
+    );
+    Outputs = (
+        "$(ProductResourcesDir)/$(InputFileName)"
+    );
+    Options = (
+        {   Name = VALIDATE_PLIST_FILES_WHILE_COPYING;
+            Type = Boolean;
+            DefaultValue = NO;
+            CommandLineFlag = "--validate";
+        },
+    );
+}

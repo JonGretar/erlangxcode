@@ -11,9 +11,7 @@
 		Identifier = "sourcecode.erlang.erl";
 		BasedOn = "sourcecode.erlang";
 		Name = "Erlang Module File";
-		Extensions = (
-			erl,
-		);
+		Extensions = ( erl );
 		MagicWord = (
 			"#!/bin/escript",
 			"#! /bin/escript",
@@ -29,20 +27,14 @@
 		Identifier = "sourcecode.erlang.hrl";
 		BasedOn = "sourcecode.erlang";
 		Name = "Erlang Interface File";
-		Extensions = (
-			hrl,
-		);
-		AppliesToBuildRules = NO;
+		Extensions = ( hrl );
+		AppliesToBuildRules = no;
 	},
 	{
 		Identifier = "text.erlang.terms";
 		BasedOn = sourcecode;
 		Name = "Erlang Terms File";
-		Extensions = (
-			app,
-			appup,
-			rel,
-		);
+		Extensions = ( app, appup, rel );
 		AppliesToBuildRules = YES;
 	},
 )

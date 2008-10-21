@@ -4,4 +4,9 @@
 		FileType = "sourcecode.erlang.erl";
 		CompilerSpec = "org.erlang.compiler.erlc";
 	},
+	{
+		Name = "Erlang term files rule";
+		FileType = "text.erlang.terms";
+		CompilerSpec = "org.erlang.build-tasks.copy-resources";
+	},
 )

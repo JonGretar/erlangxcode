@@ -4,4 +4,16 @@
         IncludeInPrefs = NO;
 		NameFormat = "-module(%@)";
 	},
+	
+	// MARK: Functions
+	{
+		Identifier = "xcode.syntax.definition.erlang.function";
+		BasedOn = "xcode.syntax.definition.function";
+		IncludeInPrefs = NO;
+	},
+	{
+		Identifier = "xcode.syntax.declaration.erlang.function";
+		BasedOn = "xcode.syntax.declaration.function";
+		IncludeInPrefs = NO;
+	},
 )

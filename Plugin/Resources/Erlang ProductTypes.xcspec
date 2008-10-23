@@ -1,4 +1,6 @@
+(
 {
+	Type = "ProductType";
 	Identifier = "org.erlang.product-type.beam";
 	Name = "Erlang Beam File";
 	Description = "Erlang Compiled Code";
@@ -10,4 +12,5 @@
 	PackageTypes = (
 		"org.erlang.package-type.executable",
 	);
-}
+},
+)

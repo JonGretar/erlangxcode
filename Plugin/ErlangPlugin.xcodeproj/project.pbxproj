@@ -26,15 +26,15 @@
 		257573A8072882FA000BE9CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		257573A9072882FA000BE9CA /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFB99DB0344B18C03A80106 /* AppleScriptKit.framework */; };
 		257573AC072882FA000BE9CA /* ErlangPlugin.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 65DBA0C00447BAAB00246FD8 /* ErlangPlugin.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
-		3301F6010E852376008D0AB0 /* Erlang.xcbuildrules in Resources */ = {isa = PBXBuildFile; fileRef = 33F287590E849517003F2841 /* Erlang.xcbuildrules */; };
-		3332E5FE0E8C263A00F0E592 /* Erlang.pbprodspec in Resources */ = {isa = PBXBuildFile; fileRef = 3332E5FD0E8C263A00F0E592 /* Erlang.pbprodspec */; };
+		3301F6010E852376008D0AB0 /* Erlang BuildRules.xcbuildrules in Resources */ = {isa = PBXBuildFile; fileRef = 33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */; };
+		3332E5FE0E8C263A00F0E592 /* Erlang ProductTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */; };
 		337F857C0EAE7E3E00EF344B /* copyresources.rb in Resources */ = {isa = PBXBuildFile; fileRef = 337F857B0EAE7E3E00EF344B /* copyresources.rb */; };
-		337F857E0EAE7E8400EF344B /* ErlangCopyResources.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 337F857D0EAE7E8400EF344B /* ErlangCopyResources.xcspec */; };
+		337F857E0EAE7E8400EF344B /* Erlang CopyResources.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 337F857D0EAE7E8400EF344B /* Erlang CopyResources.xcspec */; };
 		339968CC0E8E524400B89A65 /* EXCompilerSpecificationErlc.h in Headers */ = {isa = PBXBuildFile; fileRef = 339968CA0E8E524400B89A65 /* EXCompilerSpecificationErlc.h */; };
 		339968CD0E8E524400B89A65 /* EXCompilerSpecificationErlc.m in Sources */ = {isa = PBXBuildFile; fileRef = 339968CB0E8E524400B89A65 /* EXCompilerSpecificationErlc.m */; };
-		33A453E30E86A8AC00737D57 /* Erlang.xctxtmacro in Resources */ = {isa = PBXBuildFile; fileRef = 33A453E20E86A8AC00737D57 /* Erlang.xctxtmacro */; };
-		33AF22530E914AA800034171 /* erlc.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 33AF22520E914AA800034171 /* erlc.xcspec */; };
-		33C6132F0E91501C00EBBBE1 /* Erlang.xcsynspec in Resources */ = {isa = PBXBuildFile; fileRef = 33C6132E0E91501C00EBBBE1 /* Erlang.xcsynspec */; };
+		33A453E30E86A8AC00737D57 /* Erlang Macros.xctxtmacro in Resources */ = {isa = PBXBuildFile; fileRef = 33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */; };
+		33AF22530E914AA800034171 /* Erlang Compiler.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 33AF22520E914AA800034171 /* Erlang Compiler.xcspec */; };
+		33C6132F0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec in Resources */ = {isa = PBXBuildFile; fileRef = 33C6132E0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec */; };
 		33D214AB0E8AE2F4000B3678 /* XCPBuildSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D214A40E8AE2F4000B3678 /* XCPBuildSystem.h */; };
 		33D214AC0E8AE2F4000B3678 /* XCPBuildSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D214A50E8AE2F4000B3678 /* XCPBuildSystem.m */; };
 		33D214AD0E8AE2F4000B3678 /* XCPDependencyGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D214A60E8AE2F4000B3678 /* XCPDependencyGraph.h */; };
@@ -46,8 +46,8 @@
 		33D5FFE80E8AF6A0002F7777 /* EXCommandOutputParserErlc.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D5FFE60E8AF6A0002F7777 /* EXCommandOutputParserErlc.h */; };
 		33D5FFE90E8AF6A0002F7777 /* EXCommandOutputParserErlc.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D5FFE70E8AF6A0002F7777 /* EXCommandOutputParserErlc.m */; };
 		33D5FFF80E8AF76A002F7777 /* DevToolsSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D5FFF70E8AF76A002F7777 /* DevToolsSupport.framework */; };
-		33F2874C0E84938F003F2841 /* Erlang.pbfilespec in Resources */ = {isa = PBXBuildFile; fileRef = 33F2874B0E84938F003F2841 /* Erlang.pbfilespec */; };
-		33F287570E84946E003F2841 /* Erlang.xclangspec in Resources */ = {isa = PBXBuildFile; fileRef = 33F287560E84946E003F2841 /* Erlang.xclangspec */; };
+		33F2874C0E84938F003F2841 /* Erlang FileTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 33F2874B0E84938F003F2841 /* Erlang FileTypes.xcspec */; };
+		33F287570E84946E003F2841 /* Erlang Language.xclangspec in Resources */ = {isa = PBXBuildFile; fileRef = 33F287560E84946E003F2841 /* Erlang Language.xclangspec */; };
 		60A015150DBD30060071D9A8 /* ErlangPlugin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A015130DBD30060071D9A8 /* ErlangPlugin.xib */; };
 /* End PBXBuildFile section */
 
@@ -58,14 +58,14 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		257573B4072882FA000BE9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257573B5072882FA000BE9CA /* Erlang.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Erlang.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		3332E5FD0E8C263A00F0E592 /* Erlang.pbprodspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.pbprodspec; path = Erlang.pbprodspec; sourceTree = "<group>"; };
+		3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang ProductTypes.xcspec"; sourceTree = "<group>"; };
 		337F857B0EAE7E3E00EF344B /* copyresources.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = copyresources.rb; sourceTree = "<group>"; };
-		337F857D0EAE7E8400EF344B /* ErlangCopyResources.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = ErlangCopyResources.xcspec; sourceTree = "<group>"; };
+		337F857D0EAE7E8400EF344B /* Erlang CopyResources.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang CopyResources.xcspec"; sourceTree = "<group>"; };
 		339968CA0E8E524400B89A65 /* EXCompilerSpecificationErlc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXCompilerSpecificationErlc.h; sourceTree = "<group>"; };
 		339968CB0E8E524400B89A65 /* EXCompilerSpecificationErlc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXCompilerSpecificationErlc.m; sourceTree = "<group>"; };
-		33A453E20E86A8AC00737D57 /* Erlang.xctxtmacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xctxtmacro; path = Erlang.xctxtmacro; sourceTree = "<group>"; };
-		33AF22520E914AA800034171 /* erlc.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = erlc.xcspec; sourceTree = "<group>"; };
-		33C6132E0E91501C00EBBBE1 /* Erlang.xcsynspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcsynspec; path = Erlang.xcsynspec; sourceTree = "<group>"; };
+		33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xctxtmacro; path = "Erlang Macros.xctxtmacro"; sourceTree = "<group>"; };
+		33AF22520E914AA800034171 /* Erlang Compiler.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang Compiler.xcspec"; sourceTree = "<group>"; };
+		33C6132E0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcsynspec; path = "Erlang Syntax.xcsynspec"; sourceTree = "<group>"; };
 		33D214A40E8AE2F4000B3678 /* XCPBuildSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCPBuildSystem.h; path = Headers/XCPBuildSystem.h; sourceTree = "<group>"; };
 		33D214A50E8AE2F4000B3678 /* XCPBuildSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XCPBuildSystem.m; path = Headers/XCPBuildSystem.m; sourceTree = "<group>"; };
 		33D214A60E8AE2F4000B3678 /* XCPDependencyGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XCPDependencyGraph.h; path = Headers/XCPDependencyGraph.h; sourceTree = "<group>"; };
@@ -77,9 +77,9 @@
 		33D5FFE60E8AF6A0002F7777 /* EXCommandOutputParserErlc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXCommandOutputParserErlc.h; sourceTree = "<group>"; };
 		33D5FFE70E8AF6A0002F7777 /* EXCommandOutputParserErlc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXCommandOutputParserErlc.m; sourceTree = "<group>"; };
 		33D5FFF70E8AF76A002F7777 /* DevToolsSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DevToolsSupport.framework; path = Library/PrivateFrameworks/DevToolsSupport.framework; sourceTree = DEVELOPER_DIR; };
-		33F2874B0E84938F003F2841 /* Erlang.pbfilespec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.pbfilespec; path = Erlang.pbfilespec; sourceTree = "<group>"; };
-		33F287560E84946E003F2841 /* Erlang.xclangspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xclangspec; path = Erlang.xclangspec; sourceTree = "<group>"; };
-		33F287590E849517003F2841 /* Erlang.xcbuildrules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcbuildrules; path = Erlang.xcbuildrules; sourceTree = "<group>"; };
+		33F2874B0E84938F003F2841 /* Erlang FileTypes.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang FileTypes.xcspec"; sourceTree = "<group>"; };
+		33F287560E84946E003F2841 /* Erlang Language.xclangspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xclangspec; path = "Erlang Language.xclangspec"; sourceTree = "<group>"; };
+		33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcbuildrules; path = "Erlang BuildRules.xcbuildrules"; sourceTree = "<group>"; };
 		60A015140DBD30060071D9A8 /* ErlangPlugin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ErlangPlugin.xib; path = English.lproj/ErlangPlugin.xib; sourceTree = "<group>"; };
 		653593E6078DD4FA00E8BB2F /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
 		65DBA0C00447BAAB00246FD8 /* ErlangPlugin.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = ErlangPlugin.applescript; sourceTree = "<group>"; };
@@ -134,15 +134,15 @@
 				60A015130DBD30060071D9A8 /* ErlangPlugin.xib */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				653593E6078DD4FA00E8BB2F /* AppleScriptKit.sdef */,
-				3332E5FD0E8C263A00F0E592 /* Erlang.pbprodspec */,
-				33F2874B0E84938F003F2841 /* Erlang.pbfilespec */,
-				33F287560E84946E003F2841 /* Erlang.xclangspec */,
-				33A453E20E86A8AC00737D57 /* Erlang.xctxtmacro */,
-				33F287590E849517003F2841 /* Erlang.xcbuildrules */,
-				33AF22520E914AA800034171 /* erlc.xcspec */,
-				33C6132E0E91501C00EBBBE1 /* Erlang.xcsynspec */,
+				3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */,
+				33F2874B0E84938F003F2841 /* Erlang FileTypes.xcspec */,
+				33F287560E84946E003F2841 /* Erlang Language.xclangspec */,
+				33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */,
+				33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */,
+				33AF22520E914AA800034171 /* Erlang Compiler.xcspec */,
+				33C6132E0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec */,
 				337F857B0EAE7E3E00EF344B /* copyresources.rb */,
-				337F857D0EAE7E8400EF344B /* ErlangCopyResources.xcspec */,
+				337F857D0EAE7E8400EF344B /* Erlang CopyResources.xcspec */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -273,17 +273,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F2874C0E84938F003F2841 /* Erlang.pbfilespec in Resources */,
-				33F287570E84946E003F2841 /* Erlang.xclangspec in Resources */,
-				3301F6010E852376008D0AB0 /* Erlang.xcbuildrules in Resources */,
+				33F2874C0E84938F003F2841 /* Erlang FileTypes.xcspec in Resources */,
+				33F287570E84946E003F2841 /* Erlang Language.xclangspec in Resources */,
+				3301F6010E852376008D0AB0 /* Erlang BuildRules.xcbuildrules in Resources */,
 				257573A3072882FA000BE9CA /* InfoPlist.strings in Resources */,
 				60A015150DBD30060071D9A8 /* ErlangPlugin.xib in Resources */,
-				33A453E30E86A8AC00737D57 /* Erlang.xctxtmacro in Resources */,
-				3332E5FE0E8C263A00F0E592 /* Erlang.pbprodspec in Resources */,
-				33AF22530E914AA800034171 /* erlc.xcspec in Resources */,
-				33C6132F0E91501C00EBBBE1 /* Erlang.xcsynspec in Resources */,
+				33A453E30E86A8AC00737D57 /* Erlang Macros.xctxtmacro in Resources */,
+				3332E5FE0E8C263A00F0E592 /* Erlang ProductTypes.xcspec in Resources */,
+				33AF22530E914AA800034171 /* Erlang Compiler.xcspec in Resources */,
+				33C6132F0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec in Resources */,
 				337F857C0EAE7E3E00EF344B /* copyresources.rb in Resources */,
-				337F857E0EAE7E8400EF344B /* ErlangCopyResources.xcspec in Resources */,
+				337F857E0EAE7E8400EF344B /* Erlang CopyResources.xcspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

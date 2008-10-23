@@ -1,9 +1,10 @@
+(
 {
-    Identifier = org.erlang.build-tasks.copy-resources
+    Identifier = org.erlang.build-tasks.copy-resources;
     Type = Compiler;
     Name = "ErlangCopyResources";
     Description = "Copies a term file  to the product";
-    CommandLine = "cp $(InputFileRelativePath) ebin";
+    CommandLine = "copyresources.rb $(InputFileRelativePath) ebin";
     RuleName = "Copying Resources: $(InputFileName) $(InputFileRelativePath)";
     ExecDescription = "Copying $(InputFileRelativePath)";
     SynthesizeBuildRule = Yes;
@@ -20,4 +21,5 @@
             CommandLineFlag = "--validate";
         },
     );
-}
+},
+)

@@ -1,3 +1,4 @@
+(
 {
 	Type = Compiler;
 	Identifier = "org.erlang.compiler.erlc";
@@ -103,4 +104,5 @@
 			//IconName = "DX-option-language-d";
 		},
 	);
-}
+},
+)

@@ -6,7 +6,7 @@
 		Name = "Erlang Source File";
 		ComputerLanguage = erlang;
 		Language = "xcode.lang.erlang";
-		AppliesToBuildRules = YES;
+		AppliesToBuildRules = NO;
 	},
 	{
 		Type = "FileType";
@@ -29,9 +29,9 @@
 		Type = "FileType";
 		Identifier = "sourcecode.erlang.hrl";
 		BasedOn = "sourcecode.erlang";
-		Name = "Erlang Interface File";
+		Name = "Erlang Header File";
 		Extensions = ( hrl );
-		AppliesToBuildRules = no;
+		AppliesToBuildRules = NO;
 	},
 	{
 		Type = "FileType";
@@ -39,6 +39,14 @@
 		BasedOn = sourcecode;
 		Name = "Erlang Terms File";
 		Extensions = ( app, appup, rel );
+		AppliesToBuildRules = YES;
+	},
+	{
+		Type = "FileType";
+		Identifier = "text.erlang.plapp";
+		BasedOn = text.plist;
+		Name = "Erlang App File(Property List)";
+		Extensions = ( plapp );
 		AppliesToBuildRules = YES;
 	},
 )

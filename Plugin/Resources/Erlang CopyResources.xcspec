@@ -4,8 +4,8 @@
     Type = Compiler;
     Name = "ErlangCopyResources";
     Description = "Copies a term file  to the product";
-    CommandLine = "copyresources.rb $(InputFileRelativePath) ebin";
-    RuleName = "Copying Resources: $(InputFileName) $(InputFileRelativePath)";
+    CommandLine = "copyresources.rb [options] --outdir ebin $(InputFileRelativePath) ";
+    RuleName = "Copying Resources: $(InputFileName)";
     ExecDescription = "Copying $(InputFileRelativePath)";
     SynthesizeBuildRule = Yes;
     InputFileTypes = (
@@ -15,10 +15,12 @@
         "$(ProductResourcesDir)/$(InputFileName)"
     );
     Options = (
-        {   Name = VALIDATE_PLIST_FILES_WHILE_COPYING;
-            Type = Boolean;
-            DefaultValue = NO;
-            CommandLineFlag = "--validate";
+        {   Name = CURRENT_PROJECT_VERSION;
+            Type = string;
+            CommandLineArgs = {
+				"" = ();
+				"<<otherwise>>" = ("-v${0}");
+			};
         },
     );
 },

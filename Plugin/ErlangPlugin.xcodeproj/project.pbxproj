@@ -148,9 +148,9 @@
 				33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */,
 				33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */,
 				33AF22520E914AA800034171 /* Erlang Compiler.xcspec */,
+				337F857D0EAE7E8400EF344B /* Erlang CopyResources.xcspec */,
 				33C6132E0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec */,
 				337F857B0EAE7E3E00EF344B /* copyresources.rb */,
-				337F857D0EAE7E8400EF344B /* Erlang CopyResources.xcspec */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

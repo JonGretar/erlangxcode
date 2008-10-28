@@ -53,6 +53,17 @@
 			CommonOption = NO;
 		},
 		{
+			Name = "ERLC_PATH_ADD";
+			Type = stringlist;
+			DefaultValue = "ebin";
+			CommandLineArgs = {
+				"" = ();
+				"<<otherwise>>" = ("-pa${0}");
+			};
+			Category = Language;
+			CommonOption = YES;
+		},
+		{
 			Name = "ERLC_INCLUDEDIR";
 			Type = stringlist;
 			DefaultValue = "include";

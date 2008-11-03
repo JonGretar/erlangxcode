@@ -1,0 +1,4 @@
+Plugin/ErlangPlugin.xcodeproj/*.pbxuser
+Plugin/ErlangPlugin.xcodeproj/*.perspectivev3
+Plugin/ErlangPlugin.xcodeproj/*.tm_build_errors
+Plugin/build/*

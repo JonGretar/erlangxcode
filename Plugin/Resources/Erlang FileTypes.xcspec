@@ -41,12 +41,5 @@
 		Extensions = ( app, appup, rel );
 		AppliesToBuildRules = YES;
 	},
-	{
-		Type = "FileType";
-		Identifier = "text.erlang.plapp";
-		BasedOn = text.plist;
-		Name = "Erlang App File(Property List)";
-		Extensions = ( plapp );
-		AppliesToBuildRules = YES;
-	},
+
 )

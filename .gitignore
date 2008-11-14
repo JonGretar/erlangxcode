@@ -1,5 +1,6 @@
-Plugin/ErlangPlugin.xcodeproj/*.pbxuser
-Plugin/ErlangPlugin.xcodeproj/*.perspectivev3
-Plugin/ErlangPlugin.xcodeproj/*.tm_build_errors
+*.pbxuser
+*.perspectivev3
+*.tm_build_errors
+*.mode1v3
 Plugin/build/*
 .DS_Store

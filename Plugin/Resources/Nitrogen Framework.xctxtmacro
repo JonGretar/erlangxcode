@@ -20,7 +20,7 @@
 			Name = "Body (Nitrogen)";
 			IsMenuItem = YES;
 			Tag = body;
-			DefaultContent = "title=\"Untitled\" , body=[<#!contents!#>]";
+			DefaultContent = "title=\"Untitled\" , body=[\n\t<#!contents!#>\n]";
 			CompletionPrefix = "#body";
 		},
 		{
@@ -41,6 +41,15 @@
 			DefaultContent = "";
 			CompletionPrefix = "#br";
 		},
+		{
+			Identifier = "erlang.nitrogen.element.span";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "Span (Nitrogen)";
+			IsMenuItem = NO;
+			Tag = span;
+			DefaultContent = "text=<#!contents!#>";
+			CompletionPrefix = "#span";
+		},
 	{
 		Identifier = "erlang.nitrogen.wf";
 		Name = "WF Commands";
@@ -53,7 +62,7 @@
 			BasedOn = "erlang.nitrogen.wf";
 			Name = "WF:Render (Nitrogen)";
 			IsMenuItem = YES;
-			Method = rende;
+			Method = render;
 			DefaultContent = "<#!contents!#>";
 			CompletionPrefix = "wf:render";
 		},

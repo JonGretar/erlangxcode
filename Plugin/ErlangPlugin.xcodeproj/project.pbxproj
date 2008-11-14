@@ -30,6 +30,7 @@
 		3361CE6E0EB0C1950054A022 /* PluginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3361CE6C0EB0C1950054A022 /* PluginDelegate.m */; };
 		337F857C0EAE7E3E00EF344B /* copyresources.rb in Resources */ = {isa = PBXBuildFile; fileRef = 337F857B0EAE7E3E00EF344B /* copyresources.rb */; };
 		337F857E0EAE7E8400EF344B /* Erlang Tools.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 337F857D0EAE7E8400EF344B /* Erlang Tools.xcspec */; };
+		338E8C820ECCFB3700E2426E /* Nitrogen Framework.xctxtmacro in Resources */ = {isa = PBXBuildFile; fileRef = 338E8C810ECCFB3700E2426E /* Nitrogen Framework.xctxtmacro */; };
 		339968CC0E8E524400B89A65 /* EXCompilerSpecificationErlc.h in Headers */ = {isa = PBXBuildFile; fileRef = 339968CA0E8E524400B89A65 /* EXCompilerSpecificationErlc.h */; };
 		339968CD0E8E524400B89A65 /* EXCompilerSpecificationErlc.m in Sources */ = {isa = PBXBuildFile; fileRef = 339968CB0E8E524400B89A65 /* EXCompilerSpecificationErlc.m */; };
 		33A453E30E86A8AC00737D57 /* Erlang Macros.xctxtmacro in Resources */ = {isa = PBXBuildFile; fileRef = 33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */; };
@@ -63,6 +64,7 @@
 		3361CE6C0EB0C1950054A022 /* PluginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginDelegate.m; sourceTree = "<group>"; };
 		337F857B0EAE7E3E00EF344B /* copyresources.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = copyresources.rb; sourceTree = "<group>"; };
 		337F857D0EAE7E8400EF344B /* Erlang Tools.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang Tools.xcspec"; sourceTree = "<group>"; };
+		338E8C810ECCFB3700E2426E /* Nitrogen Framework.xctxtmacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xctxtmacro; path = "Nitrogen Framework.xctxtmacro"; sourceTree = "<group>"; };
 		339968CA0E8E524400B89A65 /* EXCompilerSpecificationErlc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXCompilerSpecificationErlc.h; sourceTree = "<group>"; };
 		339968CB0E8E524400B89A65 /* EXCompilerSpecificationErlc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXCompilerSpecificationErlc.m; sourceTree = "<group>"; };
 		33A453E20E86A8AC00737D57 /* Erlang Macros.xctxtmacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xctxtmacro; path = "Erlang Macros.xctxtmacro"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				337F857D0EAE7E8400EF344B /* Erlang Tools.xcspec */,
 				33C6132E0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec */,
 				337F857B0EAE7E3E00EF344B /* copyresources.rb */,
+				338E8C810ECCFB3700E2426E /* Nitrogen Framework.xctxtmacro */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				33C6132F0E91501C00EBBBE1 /* Erlang Syntax.xcsynspec in Resources */,
 				337F857C0EAE7E3E00EF344B /* copyresources.rb in Resources */,
 				337F857E0EAE7E8400EF344B /* Erlang Tools.xcspec in Resources */,
+				338E8C820ECCFB3700E2426E /* Nitrogen Framework.xctxtmacro in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

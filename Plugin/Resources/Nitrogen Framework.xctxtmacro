@@ -1,0 +1,105 @@
+(
+	{
+		Identifier = erlang.nitrogen;
+		Name = "Nitrogen Web Framework";
+		IsMenu = YES;
+		IncludeContexts = (
+			"xcode.lang.erlang",
+		);
+	},
+	{
+		Identifier = "erlang.nitrogen.element";
+		Name = "Elements";
+		IsMenu = YES;
+		BasedOn = erlang.nitrogen;
+		TextString = "#$(Tag) { $(DefaultContent) },";
+	},
+		{
+			Identifier = "erlang.nitrogen.element.body";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "Body (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = body;
+			DefaultContent = "title=\"Untitled\" , body=[<#!contents!#>]";
+			CompletionPrefix = "#body";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.panel";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "Panel (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = panel;
+			DefaultContent = "id=<#!panelname!#> , body=[<#!contents!#>]";
+			CompletionPrefix = "#panel";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.panel";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "Line Break (Nitrogen)";
+			IsMenuItem = NO;
+			Tag = br;
+			DefaultContent = "";
+			CompletionPrefix = "#br";
+		},
+	{
+		Identifier = "erlang.nitrogen.wf";
+		Name = "WF Commands";
+		IsMenu = YES;
+		BasedOn = erlang.nitrogen;
+		TextString = "wf:$(Method)($(DefaultContent)),";
+	},
+		{
+			Identifier = "erlang.nitrogen.wf.render";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:Render (Nitrogen)";
+			IsMenuItem = YES;
+			Method = rende;
+			DefaultContent = "<#!contents!#>";
+			CompletionPrefix = "wf:render";
+		},
+		{
+			Identifier = "erlang.nitrogen.wf.flash";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:Flash (Nitrogen)";
+			IsMenuItem = YES;
+			Method = flash;
+			DefaultContent = "Msg";
+			CompletionPrefix = "wf:flash";
+		},
+		{
+			Identifier = "erlang.nitrogen.wf.update";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:Update (Nitrogen)";
+			IsMenuItem = YES;
+			Method = update;
+			DefaultContent = "<#!contents!#>, <#!contents!#>";
+			CompletionPrefix = "wf:update";
+		},
+		{
+			Identifier = "erlang.nitrogen.wf.q";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:Q (Nitrogen)";
+			IsMenuItem = YES;
+			Method = q;
+			DefaultContent = "<#!contents!#>";
+			CompletionPrefix = "wf:q";
+		},
+		{
+			Identifier = "erlang.nitrogen.wf.f";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:F (Nitrogen)";
+			IsMenuItem = YES;
+			Method = f;
+			DefaultContent = "<#!contents!#>";
+			CompletionPrefix = "wf:f";
+		},
+		{
+			Identifier = "erlang.nitrogen.wf.wire";
+			BasedOn = "erlang.nitrogen.wf";
+			Name = "WF:Wire (Nitrogen)";
+			IsMenuItem = YES;
+			Method = wire;
+			DefaultContent = "<#!contents!#>";
+			CompletionPrefix = "wf:wire";
+		},
+)

@@ -25,6 +25,17 @@
 		AppliesToBuildRules = YES;
 		CanSetIncludeInIndex = YES;
 	},
+		{
+			Type = "FileType";
+			Identifier = "sourcecode.erlang.erl.gen_supervisor";
+			BasedOn = "sourcecode.erlang.erl";
+			Name = "Erlang Supervisor Module";
+			//Extensions = ( erl );
+			MagicWord = (
+				"-behaviour(supervisor).",
+				"-behaviour (supervisor).",
+			);
+		},
 	{
 		Type = "FileType";
 		Identifier = "sourcecode.erlang.hrl";

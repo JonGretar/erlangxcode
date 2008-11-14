@@ -2,7 +2,7 @@
 	{
 		Identifier = "xcode.lang.erlang.identifier";
 		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyz#'";
+			StartChars = "abcdefghijklmnopqrstuvwxyz#'-";
 			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'_-@:#";
 			Words = (
 				true,

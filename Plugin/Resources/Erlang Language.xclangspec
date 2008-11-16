@@ -2,8 +2,8 @@
 	{
 		Identifier = "xcode.lang.erlang.identifier";
 		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyz#'-";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'_-@:#";
+			StartChars = "abcdefghijklmnopqrstuvwxyz'#";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'_-@:";
 			Words = (
 				true,
 				false,
@@ -35,6 +35,10 @@
 				try,
 				when,
 				xor,
+				",",
+				".",
+				";",
+				":",
 				//"->",    
 				"!",
 			);

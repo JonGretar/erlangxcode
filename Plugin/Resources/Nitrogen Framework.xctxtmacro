@@ -11,7 +11,7 @@
 		Identifier = "erlang.nitrogen.element";
 		Name = "Elements";
 		IsMenu = YES;
-		BasedOn = erlang.nitrogen;
+		BasedOn = "erlang.nitrogen";
 		TextString = "#$(Tag) { $(DefaultContent) },";
 	},
 		{

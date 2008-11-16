@@ -10,7 +10,7 @@
 	{
 		Identifier = "erlang.preprocessor";
 		BasedOn = erlang;
-		Name = "Preprocessor Statements"
+		Name = "Preprocessor Statements";
 		IsMenu = YES;
 		TextString = "-$(Tag)($(Contents)).";
 	},
@@ -88,13 +88,13 @@
 		},
 	{
 		Identifier = "erlang.block";
-		BasedOn = erlang;
-		Name = "Blocks"
+		BasedOn = "erlang";
+		Name = "Blocks";
 		IsMenu = YES;
 	},
 		{
 			Identifier = "erlang.block.case";
-			BasedOn = erlang.block;
+			BasedOn = "erlang.block";
 			IsMenuItem = YES;
 			Name = "Case Block";
 			TextString = "case <#expr#> of\n\t<#!pattern!#> ->\n\t\t <#!actions!#>; \n\t _Otherwise -> \n\t\t true \nend\n";
@@ -102,32 +102,11 @@
 		},
 		{
 			Identifier = "erlang.block.if";
-			BasedOn = erlang.block;
+			BasedOn = "erlang.block";
 			IsMenuItem = YES;
 			Name = "If Block";
 			TextString = "if \n\t<#!statements!#> ->\n\t\t <#!actions!#>; \n\t true -> \n\t\t <#!actions!#> \nend\n";
 			CompletionPrefix = if;
 		},
-		{
-			Identifier = "erlang.block.if";
-			BasedOn = erlang.block;
-			IsMenuItem = YES;
-			Name = "Case Block";
-			TextString = "receive\n\t<#!pattern!#> ->\n\t\t <#!actions!#>; \n\t _Otherwise -> \n\t\t true \nend\n";
-			CompletionPrefix = receive;
-		},
-	{
-		Identifier = "erlang.otp";
-		BasedOn = erlang;
-		Name = "OTP Functions"
-		IsMenu = YES;
-	},
-		{
-			Identifier = "erlang.otp.init";
-			BasedOn = erlang.otp;
-			IsMenuItem = YES;
-			Name = "Init (OTP)";
-			TextString = "init ->\n\tok.";
-			CompletionPrefix = init;
-		},
+
 )

@@ -42,6 +42,15 @@
 			CompletionPrefix = "-compile";
 		},
 		{
+			Identifier = "erlang.preprocessor.behaviour";
+			BasedOn = "erlang.preprocessor";
+			Name = "Behaviour";
+			IsMenuItem = YES;
+			Tag = behaviour;
+			Contents = "<#!statements!#>";
+			CompletionPrefix = "-behaviour";
+		},
+		{
 			Identifier = "erlang.preprocessor.define";
 			BasedOn = "erlang.preprocessor";
 			Name = "Define";

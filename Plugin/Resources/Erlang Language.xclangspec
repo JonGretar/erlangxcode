@@ -2,7 +2,7 @@
 	{
 		Identifier = "xcode.lang.erlang.identifier";
 		Syntax = {
-			StartChars = "abcdefghijklmnopqrstuvwxyz'#";
+			StartChars = "abcdefghijklmnopqrstuvwxyz'";
 			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'_-@:";
 			Words = (
 				true,
@@ -218,6 +218,21 @@
 			AltType = "xcode.syntax.identifier.constant";
 		};
 	},
+	// Records
+	{
+		Identifier = "xcode.lang.erlang.record";
+		Syntax = {
+			StartChars = "#";
+			Chars = "#abcdefghijklmnopqrstuvwxyz0123456789";
+			Words = (
+				"#testrec",
+			);
+			Type = "xcode.syntax.identifier.constant";
+			AltType = "xcode.syntax.identifier.constant";
+		};
+	},
+	
+	// Lang Def
 	{
 		Identifier = "xcode.lang.erlang";
 		Description = "Erlang Coloring";
@@ -228,14 +243,12 @@
 			Tokenizer = "xcode.lang.erlang.lexer.toplevel";
 			IncludeRules = (
 				"xcode.lang.erlang.function",
-				"xcode.lang.erlang.bracketexpr",
-				"xcode.lang.erlang.parenexpr",
-				"xcode.lang.erlang.tupleexpr",
-				"xcode.lang.erlang.binaryexpr",
 			);
 			Type = "xcode.syntax.plain";
 		};
 	},
+	
+	// Lexers
 	{
 		Identifier = "xcode.lang.erlang.lexer";
 		Syntax = {
@@ -249,6 +262,7 @@
 				"xcode.lang.erlang.identifier",
 				"xcode.lang.erlang.variables",
 				"xcode.lang.erlang.macro",
+				"xcode.lang.erlang.record",
 			);
 		};
 	},
@@ -262,10 +276,11 @@
 				"xcode.lang.erlang.preprocessor",
 				"xcode.lang.string",
 				"xcode.lang.character",
-				"xcode.lang.erlang.function.declarator",
+				"xcode.lang.erlang.function.start",
 				"xcode.lang.erlang.identifier",
 				"xcode.lang.erlang.variables",
 				"xcode.lang.erlang.macro",
+				"xcode.lang.erlang.record",
 				"xcode.lang.number",
 			);
 		};
@@ -282,6 +297,7 @@
 				"xcode.lang.character",
 				"xcode.lang.erlang.variables",
 				"xcode.lang.erlang.macro",
+				"xcode.lang.erlang.record",
 				"xcode.lang.number",
 			);
 		};
@@ -297,30 +313,39 @@
 			Type = "xcode.syntax.preprocessor";
 		};
 	},
+	
+	// Function 
+	{
+		Identifier = "xcode.lang.erlang.function.symbol";
+		Syntax = {
+			Words = (
+				"->",
+			);
+			Type = "xcode.syntax.keyword";
+		};
+	},
 	{
 		Identifier = "xcode.lang.erlang.function";
 		Syntax = {
 			Tokenizer = "xcode.lang.erlang.lexer.toplevel";
-			Start = "xcode.lang.erlang.function.declarator";
+			Start = "xcode.lang.erlang.function.start";
 			End = ".";
-			AltEnd = ";";
 			Foldable = YES;
-			Recursive = YES;
 			StartAtBOL = YES;
-			IncludeRules = (
-				"xcode.lang.erlang.bracketexpr",
-				"xcode.lang.erlang.parenexpr",
-			);
 			Type = "xcode.syntax.definition.function";
+			IncludeRules = (
+				"xcode.lang.erlang.variable",
+				"xcode.lang.erlang.identifier",
+			);
 		};
 	},
 	{
-		Identifier = "xcode.lang.erlang.function.declarator";
+		Identifier = "xcode.lang.erlang.function.start";
 		Syntax = {
 			Tokenizer = "xcode.lang.erlang.lexer";
 			Rules = (
 				"xcode.lang.erlang.function.name",
-				"xcode.lang.erlang.operator.start",
+				"xcode.lang.erlang.function.symbol?",
 			);
 		};
 	},
@@ -335,17 +360,9 @@
 			Type = "xcode.syntax.name.partial";
 		};
 	},
-	{
-		Identifier = "xcode.lang.erlang.operator.start";
-		Syntax = {
-			Words = (
-				"->",
-			);
-			Type = "xcode.syntax.keyword";
-		};
-	},
+		
 	
-	
+	// Misc
 	{
 		Identifier = "xcode.lang.erlang.parenexpr";
 		Syntax = {
@@ -353,9 +370,6 @@
 			Start = "(";
 			End = ")";
 			Recursive = YES;
-			IncludeRules = (
-				"xcode.lang.erlang.bracketexpr",
-			);
 		};
 	},
 	{
@@ -365,9 +379,6 @@
 			Start = "[";
 			End = "]";
 			Recursive = YES;
-			IncludeRules = (
-				"xcode.lang.erlang.parenexpr",
-			);
 		};
 	},
 	{
@@ -377,10 +388,6 @@
 			Start = "{";
 			End = "}";
 			Recursive = YES;
-			IncludeRules = (
-				"xcode.lang.erlang.bracketexpr",
-				"xcode.lang.erlang.parenexpr",
-			);
 		};
 	},
 	{

@@ -15,6 +15,15 @@
 		TextString = "#$(Tag) { $(DefaultContent) },";
 	},
 		{
+			Identifier = "erlang.nitrogen.element.template";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "Template (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = template;
+			DefaultContent = "file=\"<#!contents!#>\"";
+			CompletionPrefix = "#body";
+		},
+		{
 			Identifier = "erlang.nitrogen.element.body";
 			BasedOn = "erlang.nitrogen.element";
 			Name = "Body (Nitrogen)";

@@ -1,119 +1,146 @@
 (
-{
-	Type = Compiler;
-	Identifier = "org.erlang.compiler.erlc";
-	Class = "EXCompilerSpecificationErlc";
-	Name = "Erlang Compiler";
-	Description = "Erlang Compiler";
-	Version = "R12B4";
-	Vendor = "Erlang";
-	ExecPath = "/usr/local/bin/erlc";
-	OptionsForCommandLinePrefix = "ERLC_";
-	Architectures = (
-		beam,
-		i386,
-		ppc,
-	);
-	Languages = (
-		erlang,
-	);
-	FileTypes = (
-		"sourcecode.erlang.erl",
-	);
-	SupportsZeroLink = NO;
-	SupportsPredictiveCompilation = NO;
-	SupportsHeadermaps = NO;
-	//CommandOutputParser = "EXCommandOutputParserErlc";
-	CommandOutputParser = (
-		("(.*?):([0-9]+): Warning:(.*)", emit-warning),
-		("(.*?):([0-9]+): Error:(.*)", emit-error),
-		("(.*?):([0-9]+): (.*)", emit-error)
-	);
-	Options = (
-		{
-			Name = "ERLC_OTHERFLAGS";
-			Type = stringlist;
-			DefaultValue = "";
-			CommandLineArgs = {
-				"" = ();
-				"<<otherwise>>" = ("${0}");
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-		{
-			Name = "ERLC_OUTPUTDIR";
-			Type = string;
-			DefaultValue = ebin;
-			CommandLineArgs = {
-				"" = ();
-				"<<otherwise>>" = ("-o${0}");
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-		{
-			Name = "ERLC_PATH_ADD";
-			Type = stringlist;
-			DefaultValue = "ebin";
-			CommandLineArgs = {
-				"" = ();
-				"<<otherwise>>" = ("-pa${0}");
-			};
-			Category = Language;
-			CommonOption = YES;
-		},
-		{
-			Name = "ERLC_INCLUDEDIR";
-			Type = stringlist;
-			DefaultValue = "include";
-			CommandLineArgs = {
-				"" = ();
-				"<<otherwise>>" = ("-I${0}");
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-		{
-			Name = "ERLC_SMP";
-			Type = bool;
-			DefaultValue = NO;
-			CommandLineArgs = {
-				NO = ();
-				YES = ( "-smp" );
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-		{
-			Name = "ERLC_WARNINGLEVEL";
-			Type = enum;
-			AllowedValues = ( 0, 1, 2, 3, 4, );
-			DefaultValue = 1;
-			CommandLineArgs = {
-				1 = ();
-				"<<otherwise>>" = ( "-W${0}" );
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-		{
-			Name = "ERLC_VERBOSE";
-			Type = bool;
-			DefaultValue = NO;
-			CommandLineArgs = {
-				NO = ();
-				YES = (	"-v" );
-			};
-			Category = Language;
-			CommonOption = NO;
-		},
-	);
-	OptionCategories = (
-		{
-			Name = Language;
-			//IconName = "DX-option-language-d";
-		},
-	);
-},
+	{
+		Type = Compiler;
+		Identifier = "org.erlang.compiler.erlc";
+		Class = "EXCompilerSpecificationErlc";
+		Name = "Erlang Compiler";
+		Description = "Erlang Compiler";
+		Version = R12B4;
+		Vendor = Erlang;
+		ExecPath = "/usr/local/bin/erlc";
+		"OptionsForCommandLinePrefix" = "ERLC_";
+		Architectures = (
+			beam,
+			i386,
+			ppc,
+		);
+		Languages = (
+			erlang,
+		);
+		FileTypes = (
+			"sourcecode.erlang.erl",
+		);
+		SupportsZeroLink = NO;
+		"SupportsPredictiveCompilation" = NO;
+		SupportsHeadermaps = NO;
+		CommandOutputParser = (
+			(
+				"(.*?):([0-9]+): Warning:(.*)",
+				"emit-warning",
+			),
+			(
+				"(.*?):([0-9]+): Error:(.*)",
+				"emit-error",
+			),
+			(
+				"(.*?):([0-9]+): (.*)",
+				"emit-error",
+			),
+		);
+		Options = (
+			{
+				Name = "ERLC_OTHERFLAGS";
+				Type = stringlist;
+				DefaultValue = "";
+				CommandLineArgs = {
+					"" = ();
+					"<<otherwise>>" = (
+						"${0}",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				Name = "ERLC_OUTPUTDIR";
+				Type = string;
+				DefaultValue = ebin;
+				CommandLineArgs = {
+					"" = ();
+					"<<otherwise>>" = (
+						"-o${0}",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				Name = "ERLC_PATH_ADD";
+				Type = stringlist;
+				DefaultValue = ebin;
+				CommandLineArgs = {
+					"" = ();
+					"<<otherwise>>" = (
+						"-pa${0}",
+					);
+				};
+				Category = Language;
+				CommonOption = YES;
+			},
+			{
+				Name = "ERLC_INCLUDEDIR";
+				Type = stringlist;
+				DefaultValue = include;
+				CommandLineArgs = {
+					"" = ();
+					"<<otherwise>>" = (
+						"-I${0}",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				Name = "ERLC_SMP";
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = {
+					NO = ();
+					YES = (
+						"-smp",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				Name = "ERLC_WARNINGLEVEL";
+				Type = enum;
+				AllowedValues = (
+					0,
+					1,
+					2,
+					3,
+					4,
+				);
+				DefaultValue = 1;
+				CommandLineArgs = {
+					1 = ();
+					"<<otherwise>>" = (
+						"-W${0}",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+			{
+				Name = "ERLC_VERBOSE";
+				Type = bool;
+				DefaultValue = NO;
+				CommandLineArgs = {
+					NO = ();
+					YES = (
+						"-v",
+					);
+				};
+				Category = Language;
+				CommonOption = NO;
+			},
+		);
+		OptionCategories = (
+			{
+				Name = Language;
+			},
+		);
+	},
 )

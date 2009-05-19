@@ -86,7 +86,7 @@
 		33E4D3320EB0C96F000E5168 /* ErlangXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErlangXMenu.m; sourceTree = "<group>"; };
 		33F2874B0E84938F003F2841 /* Erlang FileTypes.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang FileTypes.xcspec"; sourceTree = "<group>"; };
 		33F287560E84946E003F2841 /* Erlang Language.xclangspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xclangspec; path = "Erlang Language.xclangspec"; sourceTree = "<group>"; };
-		33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcbuildrules; path = "Erlang BuildRules.xcbuildrules"; sourceTree = "<group>"; };
+		33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Erlang BuildRules.xcbuildrules"; sourceTree = "<group>"; };
 		60A015140DBD30060071D9A8 /* ErlangPlugin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ErlangPlugin.xib; path = English.lproj/ErlangPlugin.xib; sourceTree = "<group>"; };
 		65DBA1180447BC6B00246FD8 /* ErlangPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ErlangPlugin.h; sourceTree = "<group>"; };
 		65DBA1190447BC6B00246FD8 /* ErlangPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ErlangPlugin.m; sourceTree = "<group>"; };

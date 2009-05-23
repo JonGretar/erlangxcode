@@ -24,6 +24,7 @@
 		257573A6072882FA000BE9CA /* ErlangPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBA1190447BC6B00246FD8 /* ErlangPlugin.m */; };
 		257573A8072882FA000BE9CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		3301F6010E852376008D0AB0 /* Erlang BuildRules.xcbuildrules in Resources */ = {isa = PBXBuildFile; fileRef = 33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */; };
+		3302F51E0FC8322200FCF266 /* DevToolsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3302F51D0FC8322200FCF266 /* DevToolsFoundation.framework */; };
 		3332E5FE0E8C263A00F0E592 /* Erlang ProductTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */; };
 		334FB9900ED4696D00E85ECD /* Erlang PackageTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 334FB98F0ED4696D00E85ECD /* Erlang PackageTypes.xcspec */; };
 		3361CE6D0EB0C1950054A022 /* PluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3361CE6B0EB0C1950054A022 /* PluginDelegate.h */; };
@@ -59,6 +60,7 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		257573B4072882FA000BE9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257573B5072882FA000BE9CA /* Erlang.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Erlang.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		3302F51D0FC8322200FCF266 /* DevToolsFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DevToolsFoundation.framework; path = Library/PrivateFrameworks/DevToolsFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang ProductTypes.xcspec"; sourceTree = "<group>"; };
 		334FB98F0ED4696D00E85ECD /* Erlang PackageTypes.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang PackageTypes.xcspec"; sourceTree = "<group>"; };
 		334FB9A10ED469FF00E85ECD /* Erlang Architecture.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Erlang Architecture.xcspec"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				257573A8072882FA000BE9CA /* Cocoa.framework in Frameworks */,
 				33D214C30E8AE39A000B3678 /* DevToolsCore.framework in Frameworks */,
 				33D5FFF80E8AF76A002F7777 /* DevToolsSupport.framework in Frameworks */,
+				3302F51E0FC8322200FCF266 /* DevToolsFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +124,7 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3302F51D0FC8322200FCF266 /* DevToolsFoundation.framework */,
 				33D5FFF70E8AF76A002F7777 /* DevToolsSupport.framework */,
 				33D214C20E8AE39A000B3678 /* DevToolsCore.framework */,
 				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,

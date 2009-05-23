@@ -23,7 +23,6 @@
 		257573A3072882FA000BE9CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		257573A6072882FA000BE9CA /* ErlangPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DBA1190447BC6B00246FD8 /* ErlangPlugin.m */; };
 		257573A8072882FA000BE9CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		257573A9072882FA000BE9CA /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFB99DB0344B18C03A80106 /* AppleScriptKit.framework */; };
 		3301F6010E852376008D0AB0 /* Erlang BuildRules.xcbuildrules in Resources */ = {isa = PBXBuildFile; fileRef = 33F287590E849517003F2841 /* Erlang BuildRules.xcbuildrules */; };
 		3332E5FE0E8C263A00F0E592 /* Erlang ProductTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 3332E5FD0E8C263A00F0E592 /* Erlang ProductTypes.xcspec */; };
 		334FB9900ED4696D00E85ECD /* Erlang PackageTypes.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 334FB98F0ED4696D00E85ECD /* Erlang PackageTypes.xcspec */; };
@@ -90,7 +89,6 @@
 		60A015140DBD30060071D9A8 /* ErlangPlugin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ErlangPlugin.xib; path = English.lproj/ErlangPlugin.xib; sourceTree = "<group>"; };
 		65DBA1180447BC6B00246FD8 /* ErlangPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ErlangPlugin.h; sourceTree = "<group>"; };
 		65DBA1190447BC6B00246FD8 /* ErlangPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ErlangPlugin.m; sourceTree = "<group>"; };
-		DAFB99DB0344B18C03A80106 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				257573A8072882FA000BE9CA /* Cocoa.framework in Frameworks */,
-				257573A9072882FA000BE9CA /* AppleScriptKit.framework in Frameworks */,
 				33D214C30E8AE39A000B3678 /* DevToolsCore.framework in Frameworks */,
 				33D5FFF80E8AF76A002F7777 /* DevToolsSupport.framework in Frameworks */,
 			);
@@ -157,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
-				DAFB99DB0344B18C03A80106 /* AppleScriptKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";

@@ -9,5 +9,14 @@
 
 @implementation ErlangPlugin 
 
++ (void)pluginDidLoad:(NSBundle *)bundle
+{
+  NSLog(@"ErlangPlugin loaded - %@", bundle);
+  
+  if (![NSBundle loadNibNamed:@"ErlangPlugin" owner:self])
+    {
+      NSLog(@"Warning! Could not load ErlangPlugin nib file.\n");
+    }
+}
 
 @end

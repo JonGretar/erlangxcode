@@ -6,9 +6,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <AppleScriptKit/ASKPluginObject.h>
 
-@interface ErlangPlugin : ASKPluginObject
+@interface ErlangPlugin : NSObject
 
++ (void)pluginDidLoad:(NSBundle *)bundle;
 
 @end

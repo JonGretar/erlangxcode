@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.github.jongretar.erlangxcode</string>
+	<string>com.github.jongretar.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -22,12 +22,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>NSMainNibFile</key>
-	<string>ErlangPlugin</string>
 	<key>NSPrincipalClass</key>
 	<string>ErlangPlugin</string>
 	<key>XCPluginHasUI</key>
-	<string>YES</string>
+	<string>NO</string>
 	<key>XCGCReady</key>
 	<string>YES</string>
 	<key>LoadAtLaunch</key>

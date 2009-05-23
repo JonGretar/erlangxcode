@@ -13,10 +13,12 @@
 {
   NSLog(@"ErlangPlugin loaded - %@", bundle);
   
-  if (![NSBundle loadNibNamed:@"ErlangPlugin" owner:self])
-    {
-      NSLog(@"Warning! Could not load ErlangPlugin nib file.\n");
-    }
+//  No need for this at the moment. 
+//  if (![NSBundle loadNibNamed:@"ErlangPlugin" owner:self])
+//  {
+//    NSLog(@"Warning! Could not load ErlangPlugin nib file.\n");
+//  }
+  
 }
 
 @end

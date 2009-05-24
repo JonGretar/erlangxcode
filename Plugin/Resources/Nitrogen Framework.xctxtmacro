@@ -604,6 +604,86 @@
 			CompletionPrefix = "#comet_start";
 		},
 		
+	// Validators
+	{
+		Identifier = "erlang.nitrogen.validators";
+		Name = "Validators";
+		IsMenu = YES;
+		BasedOn = "erlang.nitrogen";
+		TextString = "#$(Tag) { $(DefaultContent) },";
+	},
+		{
+			Identifier = "erlang.nitrogen.validators.is_required";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "is_required validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = is_required;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#is_required";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.is_email";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "is_email validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = is_email;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#is_email";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.is_integer";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "is_integer validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = is_integer;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#is_integer";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.min_length";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "min_length validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = min_length;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#min_length";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.max_length";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "max_length validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = max_length;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#max_length";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.confirm_password";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "confirm_password validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = confirm_password;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#confirm_password";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.custom";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "custom validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = custom;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#custom";
+		},
+		{
+			Identifier = "erlang.nitrogen.validators.js_custom";
+			BasedOn = "erlang.nitrogen.validators";
+			Name = "js_custom validator (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = js_custom;
+			DefaultContent = " <#!content!#>";
+			CompletionPrefix = "#js_custom";
+		},
 		
 	// WF COMMANDS
 	{

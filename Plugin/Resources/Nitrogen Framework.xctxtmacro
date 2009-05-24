@@ -21,7 +21,7 @@
 			IsMenuItem = YES;
 			Tag = template;
 			DefaultContent = "file=\"<#!contents!#>\"";
-			CompletionPrefix = "#body";
+			CompletionPrefix = "#template";
 		},
 		{
 			Identifier = "erlang.nitrogen.element.body";

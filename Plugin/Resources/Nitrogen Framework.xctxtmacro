@@ -7,6 +7,8 @@
 			"xcode.lang.erlang",
 		);
 	},
+	
+	// ELEMENTS
 	{
 		Identifier = "erlang.nitrogen.element";
 		Name = "Elements";
@@ -32,33 +34,398 @@
 			DefaultContent = "title=\"Untitled\" , body=[\n\t<#!contents!#>\n]";
 			CompletionPrefix = "#body";
 		},
+		
 		{
-			Identifier = "erlang.nitrogen.element.panel";
+			Identifier = "erlang.nitrogen.element.h1";
 			BasedOn = "erlang.nitrogen.element";
-			Name = "Panel (Nitrogen)";
+			Name = "h1 (Nitrogen)";
 			IsMenuItem = YES;
-			Tag = panel;
-			DefaultContent = "id=<#!panelname!#> , body=[<#!contents!#>]";
-			CompletionPrefix = "#panel";
+			Tag = h1;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#h1";
 		},
 		{
-			Identifier = "erlang.nitrogen.element.panel";
+			Identifier = "erlang.nitrogen.element.h2";
 			BasedOn = "erlang.nitrogen.element";
-			Name = "Line Break (Nitrogen)";
-			IsMenuItem = NO;
+			Name = "h2 (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = h2;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#h2";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.h3";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "h3 (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = h3;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#h3";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.h4";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "h4 (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = h4;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#h4";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.list";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "list (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = list;
+			DefaultContent = "numbered=false, body=[ \n\t<#!listitems!#>\n ]";
+			CompletionPrefix = "#list";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.listitem";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "listitem (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = listitem;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#listitem";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.br";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "br (Nitrogen)";
+			IsMenuItem = YES;
 			Tag = br;
 			DefaultContent = "";
 			CompletionPrefix = "#br";
 		},
 		{
+			Identifier = "erlang.nitrogen.element.hr";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "hr (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = hr;
+			DefaultContent = "";
+			CompletionPrefix = "#hr";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.p";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "p (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = p;
+			DefaultContent = "";
+			CompletionPrefix = "#p";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.label";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "label (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = label;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#label";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.value";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "value (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = value;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#value";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.link";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "link (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = link;
+			DefaultContent = "text=\"<#!text!#>\" url=\"<#!text!#>\"";
+			CompletionPrefix = "#link";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.error";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "error (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = error;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#error";
+		},
+		{
 			Identifier = "erlang.nitrogen.element.span";
 			BasedOn = "erlang.nitrogen.element";
-			Name = "Span (Nitrogen)";
-			IsMenuItem = NO;
+			Name = "span (Nitrogen)";
+			IsMenuItem = YES;
 			Tag = span;
-			DefaultContent = "text=<#!contents!#>";
+			DefaultContent = "text=\"<#!text!#>\"";
 			CompletionPrefix = "#span";
 		},
+		{
+			Identifier = "erlang.nitrogen.element.button";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "button (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = button;
+			DefaultContent = "text=\"<#!text!#>\" postback=<#!postback!#>";
+			CompletionPrefix = "#button";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.literal";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "literal (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = literal;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#literal";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.textbox";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "textbox (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = textbox;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#textbox";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.hidden";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "hidden (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = hidden;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#hidden";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.textarea";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "textarea (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = textarea;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#textarea";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.datepicker_textbox";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "datepicker_textbox (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = datepicker_textbox;
+			DefaultContent = "";
+			CompletionPrefix = "#datepicker_textbox";
+		},
+		
+		{
+			Identifier = "erlang.nitrogen.element.dropdown";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "dropdown (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = dropdown;
+			DefaultContent = "postback=<#!postback!#>, value=<#!value!#>, options=[ <#!options!#> ]";
+			CompletionPrefix = "#dropdown";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.option";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "option (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = option;
+			DefaultContent = "text=\"<#!text!#>\", value=\"<#!value!#>\", selected=false";
+			CompletionPrefix = "#option";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.checkbox";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "checkbox (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = checkbox;
+			DefaultContent = "text=\"<#!text!#>\" selected=false";
+			CompletionPrefix = "#checkbox";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.password";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "password (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = password;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#password";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.panel";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "panel (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = panel;
+			DefaultContent = "body=\"<#!body!#>\"";
+			CompletionPrefix = "#panel";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.spinner";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "spinner (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = spinner;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#spinner";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.image";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "image (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = image;
+			DefaultContent = "image=\"<#!image!#>\"";
+			CompletionPrefix = "#image";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.rounded_panel";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "rounded_panel (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = rounded_panel;
+			DefaultContent = "body=\"<#!body!#>\"";
+			CompletionPrefix = "#rounded_panel";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.lightbox";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "lightbox (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = lightbox;
+			DefaultContent = "body=\"<#!body!#>\"";
+			CompletionPrefix = "#lightbox";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.table";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "table (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = table;
+			DefaultContent = "rows=[ \n\t<#!tablerows!#>\n ]";
+			CompletionPrefix = "#table";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.tablerow";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "tablerow (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = tablerow;
+			DefaultContent = "cells=[ \n\t<#!tablecells!#>\n ]";
+			CompletionPrefix = "#tablerow";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.tableheader";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "tableheader (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = tableheader;
+			DefaultContent = "body=\"<#!body!#>\"";
+			CompletionPrefix = "#tableheader";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.tablecell";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "tablecell (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = tablecell;
+			DefaultContent = "text=\"<#!text!#>\"";
+			CompletionPrefix = "#tablecell";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.singlerow";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "singlerow (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = singlerow;
+			DefaultContent = "cells=cells=[ \n\t<#!tablecells!#>\n ]";
+			CompletionPrefix = "#singlerow";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.file";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "file (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = file;
+			DefaultContent = "file=\"<#!file!#>\"";
+			CompletionPrefix = "#file";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.flash";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "flash (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = flash;
+			DefaultContent = "";
+			CompletionPrefix = "#flash";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.placeholder";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "placeholder (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = placeholder;
+			DefaultContent = "body=[<#!body!#>]";
+			CompletionPrefix = "#placeholder";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.bind";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "bind (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = bind;
+			DefaultContent = "data=<#!data!#>, map=<#!map!#>, body=[ \n\t<#!body!#>\n], empty_body=[<#!emptybody!#>] ";
+			CompletionPrefix = "#bind";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.sortblock";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "sortblock (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = sortblock;
+			DefaultContent = "items=[ <#!items!#> ]";
+			CompletionPrefix = "#sortblock";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.sortitem";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "sortitem (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = sortitem;
+			DefaultContent = "body=[ <#!body!#> ]";
+			CompletionPrefix = "#sortitem";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.draggable";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "draggable (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = draggable;
+			DefaultContent = "";
+			CompletionPrefix = "#draggable";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.droppable";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "droppable (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = droppable;
+			DefaultContent = "";
+			CompletionPrefix = "#droppable";
+		},
+		{
+			Identifier = "erlang.nitrogen.element.gravatar";
+			BasedOn = "erlang.nitrogen.element";
+			Name = "gravatar (Nitrogen)";
+			IsMenuItem = YES;
+			Tag = gravatar;
+			DefaultContent = "email=\"<#!email!#>\", size=\"80\"";
+			CompletionPrefix = "#gravatar";
+		},
+		
+		
+	// WF COMMANDS
 	{
 		Identifier = "erlang.nitrogen.wf";
 		Name = "WF Commands";

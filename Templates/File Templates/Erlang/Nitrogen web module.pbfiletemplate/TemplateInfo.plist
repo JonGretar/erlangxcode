@@ -1,0 +1,4 @@
+{
+    MainTemplateFile = "file.erl";
+    Description = "A page module for a Nitrogen web app.";
+}

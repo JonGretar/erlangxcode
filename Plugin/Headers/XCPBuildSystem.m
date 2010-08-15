@@ -71,11 +71,11 @@
 /*
 	Hook -[PBXTargetBuildContext activateImportedFileType:ensureFilesExist:]
 */
-typedef NSArray* (*importedFilesForPath_ensureFilesExist_func)(PBXTargetBuildContext* self, SEL _sel, NSString* path, BOOL ensure);
-static importedFilesForPath_ensureFilesExist_func __original_importedFilesForPath_ensureFilesExist = nil;
+static IMP __original_importedFilesForPath_ensureFilesExist = nil;
 static NSMutableDictionary* __compilers_with_import = nil;
 
-NSArray* importedFilesForPath_ensureFilesExist_hook(PBXTargetBuildContext* self, SEL _sel, NSString* path, BOOL ensure) {
++ (NSArray*)BDExtensions_importedFilesForPath:(NSString *)path ensureFilesExist:(BOOL)ensure
+{
 	PBXFileType* type = [PBXFileType fileTypeForFileName:path];
 	
 	// Check if type is in our list
@@ -88,7 +88,7 @@ NSArray* importedFilesForPath_ensureFilesExist_hook(PBXTargetBuildContext* self,
 	}
 	
 	// Type not found, call default code
-	return __original_importedFilesForPath_ensureFilesExist(self, _sel, path, ensure);
+	return [self BDExtensions_importedFilesForPath:path ensureFilesExist:ensure];
 }
 
 + (void)activateImportedFileType:(PBXFileType*)type withCompiler:(XCCompilerSpecification*)spec
@@ -99,11 +99,8 @@ NSArray* importedFilesForPath_ensureFilesExist_hook(PBXTargetBuildContext* self,
 		
 		Class c = [self class];
 		Method m = class_getInstanceMethod(c, @selector(importedFilesForPath:ensureFilesExist:));
-		__original_importedFilesForPath_ensureFilesExist = (importedFilesForPath_ensureFilesExist_func)m->method_imp;
-		m->method_imp = (IMP)importedFilesForPath_ensureFilesExist_hook;
-		
-		// Clear Objective-C runtime cache
-		if(c->cache->mask != 0) memset(c->cache->buckets, 0, (c->cache->mask+1)*sizeof(Method));
+		Method m2 = class_getInstanceMethod(c, @selector(BDExtensions_importedFilesForPath:ensureFilesExist:));
+		__original_importedFilesForPath_ensureFilesExist = method_setImplementation(m, method_getImplementation(m2));
 	}
 	
 	// Add include parser for this file type
